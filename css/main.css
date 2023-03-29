@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
 }
 #main-content {
   display: flex;
@@ -66,8 +67,42 @@ body {
   position: absolute;
   color: white;
   right: 15%;
-  top: 36%;
+  top: 35%;
 }
 #right {
-  max-width: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* the form */
+#card {
+  width: 35%;
+}
+#card label,
+#card input {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+}
+#card .single {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid hsl(270, 3%, 87%);
+}
+#date-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#date-group .form-group input[type=number]{
+  width: 25%;
+  display: inline-block;
+  padding: 0.5em;
+}
+#date-group .form-group:last-child {
+  width: 50%;
+}
+#date-group .form-group input[type=text]{
+  padding: 0.5em;
 }
