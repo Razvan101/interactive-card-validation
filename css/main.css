@@ -17,7 +17,7 @@ body {
   background-image: url('../images/bg-main-desktop.png');
 }
 #front-card {
-  position: relative;
+  position: absolute;
   left: 30%;
   top: 20%;
   width: 100%;
@@ -55,9 +55,9 @@ body {
   font-size: 0.8rem;
 }
 #back-card {
-  position: relative;
+  position: absolute;
   left: 45%;
-  top: 25%;
+  top: 55%;
   width: 100%;
 }
 #back-card img {
@@ -103,6 +103,59 @@ body {
 #date-group .form-group:last-child {
   width: 50%;
 }
-#date-group .form-group input[type=text]{
+#date-group .form-group input[type=text],
+#date-group .form-group input[type=number]{
   padding: 0.5em;
+  border: 2px solid hsl(270, 3%, 87%);
+}
+#card input[type=submit]{
+  padding: 0.6em;
+  background-color: hsl(278, 68%, 11%);
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+#card input[type=submit]:hover {
+  opacity: 0.9;
+}
+@media screen and (max-width: 1248px){
+  #back-card #cvc-number {
+    font-size: 0.7em;
+  }
+  #front-card #card-number {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 900px){
+  #front-card {
+    width: 110%;
+  }
+  #front-card #top-icon {
+    width: 25%;
+  }
+  #front-card #card-number {
+    letter-spacing: 0;
+    font-size: 0.7em
+  }
+  #front-card #card-name {
+    font-size: 0.6em;
+  }
+  #front-card #expiry-date {
+    font-size: 0.6em;
+  }
+  #back-card {
+    width: 110%;
+  }
+  #back-card #cvc-number {
+    font-size: 0.6em;
+    top: 32%;
+  }
+  #card label {
+    font-size: 0.8em;
+  }
+  #card {
+    width: 50%;
+  }
 }
