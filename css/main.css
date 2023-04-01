@@ -109,6 +109,7 @@ body {
   border: 2px solid hsl(270, 3%, 87%);
 }
 #card input[type=submit]{
+  margin-top: 1em;
   padding: 0.6em;
   background-color: hsl(278, 68%, 11%);
   border: none;
