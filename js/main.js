@@ -74,7 +74,7 @@ function validate(){
     divEl.appendChild(pEl);
     divEl.appendChild(buttonEl);
     titleEl.innerHTML = 'Thank You!';
-    imgEl.src = '../images/icon-complete.svg';
+    imgEl.src = './images/icon-complete.svg';
     pEl.innerHTML = 'We\'ve added your card details';
     buttonEl.innerHTML = 'Continue';
 
