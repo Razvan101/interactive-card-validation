@@ -57,7 +57,7 @@ function validate(){
     cvcError.style.setProperty('font-size','10px');
   }
 
-  if(errorMsg){
+  if(!errorMsg){
     let content = document.getElementById('right');
     content.style.display = 'none';
 

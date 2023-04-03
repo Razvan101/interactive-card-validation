@@ -160,3 +160,30 @@ body {
     width: 50%;
   }
 }
+.right-after {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right-after h2 {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+.right-after p {
+  font-size: 0.8em;
+  color: hsl(279, 6%, 55%);
+}
+.right-after button {
+  border: none;
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  background-color:hsl(278, 68%, 11%);
+  color: white;
+  cursor: pointer;
+}
+.right-after button:hover {
+  opacity: 0.9;
+}
